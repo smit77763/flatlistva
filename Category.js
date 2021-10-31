@@ -55,7 +55,7 @@ export default function App() {
             data={Categories}
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
-              <TouchableOpacity activeOpacity={0.6} style={{ marginBottom: 5 }}>
+              <TouchableOpacity activeOpacity={1} style={{ marginBottom: 5 }}>
                 <View style={styles.shadow}>
                   {/* for image */}
 
