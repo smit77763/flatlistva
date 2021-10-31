@@ -91,7 +91,9 @@ export default function App() {
           <Text style={{ color: "white" }}>Hall Of Fame</Text>
         </TouchableOpacity>
       </View>
+      <View>
       <FlatList data={data} renderItem={renderMainContent} />
+      </View>
     </ScrollView>
   );
 }

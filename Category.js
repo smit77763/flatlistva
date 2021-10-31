@@ -55,7 +55,7 @@ export default function App() {
             data={Categories}
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => (
-              <TouchableOpacity style={{ marginBottom: 5 }}>
+              <TouchableOpacity activeOpacity={0.6} style={{ marginBottom: 5 }}>
                 <View style={styles.shadow}>
                   {/* for image */}
 
@@ -84,14 +84,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',
+    flexDirection: "column",
     backgroundColor: "#F6F8FF",
   },
   title: {
-    fontFamily: 'Montserrat-SemiBold',
+    fontFamily: "Montserrat-SemiBold",
     marginTop: 20,
     marginLeft: 20,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     fontSize: 20,
     color: "#050152",
   },
@@ -99,13 +99,12 @@ const styles = StyleSheet.create({
     height: windowWidth * 0.26,
     flexDirection: "row",
     marginHorizontal: 15,
-    marginTop: 10
+    marginTop: 10,
   },
   flatview: {
-    width: (windowWidth * 0.24) * 3 + 36,
+    width: windowWidth * 0.24 * 3 + 36,
   },
   arrbtn: {
-
     width: 30,
     height: 30,
     justifyContent: "center",
@@ -119,11 +118,11 @@ const styles = StyleSheet.create({
   shadow: {
     flex: 1,
     marginHorizontal: 6,
-    shadowColor: "black",
-    // shadowOpacity: 0.16,
-    // shadowOffset: { width: 0, height: 3 },
-    shadowRadius: 16.3,
-    elevation: 6,
+    // shadowColor: "black",
+    // // shadowOpacity: 0.16,
+    // // shadowOffset: { width: 0, height: 3 },
+    // shadowRadius: 16.3,
+    // elevation: 2,
     borderRadius: 16.3,
     backgroundColor: "white",
     height: windowWidth * 0.24,
@@ -133,6 +132,7 @@ const styles = StyleSheet.create({
     flex: 3 / 4,
     justifyContent: "center",
     alignSelf: "center",
+    backgroundColor: "white",
   },
   cardImg: {
     width: 45,
