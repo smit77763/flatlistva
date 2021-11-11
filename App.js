@@ -16,6 +16,7 @@ import Category from "./Category";
 
 export default function App() {
   let flag =0; 
+  console.log("Sashank loda");
 
   
   const data = [
